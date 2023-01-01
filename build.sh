@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clang --target=wasm32 \
--O3 \
+-Os \
 -nostdlib \
 -fuse-ld=lld \
 -Wl,--lto-O3 \

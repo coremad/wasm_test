@@ -11,9 +11,11 @@ int test() {
 
 void fire(uint8_t * fire_image, uint32_t w, uint32_t end) {
     int w2 = w << 1;
+    int wp1 = w + 1;
+    int wm1 = w - 1;
     for (int addr = w<<1; addr < end; addr++)
         fire_image[addr] =
-            (fire_image[addr + w]+fire_image[addr + w2] + fire_image[addr - w - 1] + fire_image[addr - w + 1])>>2;
+            (fire_image[addr + w]+fire_image[addr + w2] + fire_image[addr - wm1] + fire_image[addr - wp1])>>2;
 //            (fire_image[addr + (w<<1)]+fire_image[addr + w] + fire_image[addr - 1] + fire_image[addr + 1])>>2;
 }
 

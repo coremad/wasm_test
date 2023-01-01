@@ -3,24 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>WASM fire</title>
-</head>
-<body>
-  <div>
-    <div>
-      <button id="pbutton">Pause</button><button id="cbutton">Clear</button>
-      <span id="status">pick mouse button on screen</span>
-      <div id="info">msec: <span id="fps"></span></div>
-      <div>debug: <span id="debug"></span></div>
-    </div>
-    <div id="content">
-      <canvas id="canvas"></canvas>
-    </div>
-  </div>
-<!--  <canvas id="dst_canvas" width="256" height="256"></canvas>-->
-  <script src="test.js"></script>
-</body>
-
-<style>
+  <style>
 
 body {
   background-color: black;
@@ -45,6 +28,22 @@ body {
   height: 90%;
 }
 
-</style>
+ </style>
+</head>
+<body>
+  <div>
+    <div>
+      <button id="pbutton">Pause</button><button id="cbutton">Clear</button>
+      <span id="status">pick mouse button on screen</span>
+      <div id="info">msec: <span id="fps"></span></div>
+      <div>debug: <span id="debug"></span></div>
+    </div>
+    <div id="content">
+      <canvas id="canvas"></canvas>
+    </div>
+  </div>
+<!--  <canvas id="dst_canvas" width="256" height="256"></canvas>-->
+  <script src="test.js"></script>
+</body>
 </html>
 
