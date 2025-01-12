@@ -3,4 +3,4 @@ WebAssembly example
 
 Images drawing and filters
 
-http://fire.madcore.fun/
+http://fire.madcore.pro/
